@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     // welcome to all of you.
-    // first of all i am goinf to import some assets
+    // first of all i am going to import some assets
 
     // now we will setup Retrofit for network call fetching data from server.
     // lets import retrofit dependency
