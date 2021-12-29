@@ -85,6 +85,61 @@ public class MainActivity extends AppCompatActivity {
     // this data comming from server having course content details
     // lets do it fast.
 
+
+    
+
     // tutorial has benn complited see you the next tutorial.
 
 }
+
+package com.android_examples.launchanotherapp_android_examplescom; 
+
+import android.content.Intent; 
+import android.support.v7.app.AppCompatActivity; 
+import android.os.Bundle; 
+
+import android.view.View; 
+import android.widget.Button; 
+
+
+public class MainActivity extends AppCompatActivity {
+
+    Button buttonUdemy, buttonCoursera; 
+
+    String UdemyPackageName = "com.android.udemy"; 
+
+    String CourseraPackageName = "com.android.coursera"; 
+    
+    @Override 
+    protected void onCreate(Bundle savedInstanceState) {
+
+         super.onCreate(savedInstanceState); 
+         
+         setContentView(R.layout.activity_main); 
+
+         buttonUdemy = (Button)findViewById(R.id.button); 
+
+         buttonCoursera = (Button)findViewById(R.id.button2); 
+         
+         buttonUdemy.setOnClickListener(new View.OnClickListener() { 
+
+             @Override              
+             public void onClick(View view) {
+                 // Passing Udemy Package Name Here. Intent intent = getPackageManager().getLaunchIntentForPackage(UdemyPackageName); startActivity(intent);             
+                } 
+            }
+            ); 
+
+         buttonCoursera.setOnClickListener(new View.OnClickListener() {
+
+             @Override 
+             public void onClick(View view) { 
+                 // Passing Coursera Package Name Here. Intent intent = getPackageManager().getLaunchIntentForPackage(CourseraPackageName); startActivity(intent); 
+                }
+            }
+            ); 
+        } 
+    }
+}
+
+
